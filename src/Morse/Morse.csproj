@@ -17,6 +17,9 @@
     <PackageProjectUrl>https://github.com/nxhub/morse</PackageProjectUrl>
     <Description>摩尔电码命令行模拟程序：dotnet tool install -g morse</Description>
     <PackageReleaseNotes>初始化库。</PackageReleaseNotes>
+    <Product>morse</Product>
+    <PackageId>morse</PackageId>
+    <AssemblyName>morse</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
