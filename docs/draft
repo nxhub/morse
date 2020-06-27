@@ -1,0 +1,40 @@
+server 
+	start
+
+config
+	list
+	add
+	rm
+
+code
+
+join
+	
+
+ping: CQ CQ CQ DE ping K
+	  -.-./--.-
+	  -.-./--.-
+	  -.-./--.-
+	  -../.
+	  .--./../-./--.
+	  -.-
+	  
+siri: ping DE siri K
+	  .--./../-./--.
+	  -../.
+	  .../../.-./..
+	  -.-
+	  
+ping: GM K
+	  --./--
+	  -.-
+	  
+siri: .. ..
+	  ../..
+	  -.-
+
+ping: SK
+	  .../-.-
+
+siri: SK
+	  .../-.-
