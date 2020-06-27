@@ -1,0 +1,51 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        var dot = 150;
+
+        Task.Run(() =>
+        {
+            while (true)
+            {
+                BeepOn.Beep(600, dot);
+                Thread.Sleep(dot);
+                BeepOn.Beep(600, dot);
+                Thread.Sleep(dot);
+                BeepOn.Beep(600, dot);
+
+                Thread.Sleep(dot * 3);
+
+                BeepOn.Beep(600, dot * 3);
+                Thread.Sleep(dot);
+                BeepOn.Beep(600, dot * 3);
+                Thread.Sleep(dot);
+                BeepOn.Beep(600, dot * 3);
+
+                Thread.Sleep(dot * 3);
+
+                BeepOn.Beep(600, dot);
+                Thread.Sleep(dot);
+                BeepOn.Beep(600, dot);
+                Thread.Sleep(dot);
+                BeepOn.Beep(600, dot);
+
+                Thread.Sleep(dot * 7);
+
+                Console.WriteLine("sos");
+            }
+        });
+
+        while (true)
+        {
+            Console.WriteLine(Console.ReadLine());
+        }
+    }
+}
+
+public class BeepOn
+{
+    // 37 Hz - 32767 Hz
+    [DllImport("Kernel32.dll")]
+    public static extern bool Beep(int frequency, int duration);
+}

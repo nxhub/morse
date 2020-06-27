@@ -2,11 +2,36 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <PackAsTool>true</PackAsTool>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>0.0.1</Version>
+    <Authors>NXHub</Authors>
+    <Copyright>Copyright © NXHub</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>nxhub morse tools</PackageTags>
+    <RepositoryUrl>https://github.com/nxhub/morse.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/nxhub/morse</PackageProjectUrl>
+    <Description>摩尔电码命令行模拟程序：dotnet tool install -g morse</Description>
+    <PackageReleaseNotes>初始化库。</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
