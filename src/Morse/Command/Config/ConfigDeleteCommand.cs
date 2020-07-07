@@ -1,8 +1,9 @@
-﻿using McMaster.Extensions.CommandLineUtils;
+﻿using System;
+using McMaster.Extensions.CommandLineUtils;
 
 namespace Morse.Command
 {
-    [Command("delete", Description = "添加配置。")]
+    [Command("delete", Description = "删除配置。")]
     public class ConfigDeleteCommand
     {
         [Option(Description = "配置 ID。")]
@@ -10,7 +11,7 @@ namespace Morse.Command
 
         public void OnExecute()
         {
-
+            Console.WriteLine(this.Id);
         }
     }
 }

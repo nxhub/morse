@@ -3,7 +3,7 @@ using McMaster.Extensions.CommandLineUtils;
 
 namespace Morse.Command
 {
-    [Command("list", Description = "添加配置。")]
+    [Command("list", Description = "列出所有配置。")]
     public class ConfigListCommand
     {
         public void OnExecute()

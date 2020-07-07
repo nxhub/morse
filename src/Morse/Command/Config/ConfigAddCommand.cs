@@ -1,4 +1,5 @@
-﻿using McMaster.Extensions.CommandLineUtils;
+﻿using System;
+using McMaster.Extensions.CommandLineUtils;
 
 namespace Morse.Command
 {
@@ -10,6 +11,7 @@ namespace Morse.Command
 
         public void OnExecute()
         {
+            Console.WriteLine(this.Address);
         }
     }
 }
